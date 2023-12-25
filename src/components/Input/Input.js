@@ -20,6 +20,8 @@ function Input() {
       value={input}
       minLength={5}
       maxLength={5}
+      pattern="[a-zA-Z] {5}"
+      title='5 letter word'
       onChange={e => {
         setInput(e.target.value.toUpperCase());
       }} 
